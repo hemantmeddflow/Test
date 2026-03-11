@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+
+<h2>Data Export Tool</h2>
+
+<form method="post">
+
+    <div>
+        <label>Connection String</label><br/>
+        <input type="text" name="ConnectionString" style="width:500px" required />
+    </div>
+
+    <br/>
+
+    <div>
+        <label>Table Name</label><br/>
+        <input type="text" name="TableName" required />
+    </div>
+
+    <br/>
+
+    <div>
+        <label>Export Format</label><br/>
+        <select name="Format">
+            <option value="csv">CSV</option>
+            <option value="json">JSON</option>
+        </select>
+    </div>
+
+    <br/>
+
+    <button type="submit">Export</button>
+
+</form>
